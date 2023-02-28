@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct Kopi: Identifiable {
+    let id = UUID()
+    
+    let image: String
+    let name: String
+    let location: String
+    let review: String
+
+}

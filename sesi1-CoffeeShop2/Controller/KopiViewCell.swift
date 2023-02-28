@@ -8,10 +8,14 @@
 import UIKit
 
 class KopiViewCell: UITableViewCell {
-
+    @IBOutlet weak var ket: UILabel!
+    @IBOutlet weak var alamat: UILabel!
+    @IBOutlet weak var nama: UILabel!
+    @IBOutlet weak var gambar: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        gambar.layer.cornerRadius = 10
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

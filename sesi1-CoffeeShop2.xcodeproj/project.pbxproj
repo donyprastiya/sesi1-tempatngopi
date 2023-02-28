@@ -16,6 +16,12 @@
 		CA1140DA29A9E1D200EB2BCD /* sesi1_CoffeeShop2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140D929A9E1D200EB2BCD /* sesi1_CoffeeShop2Tests.swift */; };
 		CA1140E429A9E1D200EB2BCD /* sesi1_CoffeeShop2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140E329A9E1D200EB2BCD /* sesi1_CoffeeShop2UITests.swift */; };
 		CA1140E629A9E1D200EB2BCD /* sesi1_CoffeeShop2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140E529A9E1D200EB2BCD /* sesi1_CoffeeShop2UITestsLaunchTests.swift */; };
+		CA1140F629A9E2B200EB2BCD /* KopiListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140F529A9E2B200EB2BCD /* KopiListViewController.swift */; };
+		CA1140FA29A9E2D900EB2BCD /* KopiListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1140F929A9E2D900EB2BCD /* KopiListView.storyboard */; };
+		CA1140FC29A9E30000EB2BCD /* KopiViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140FB29A9E30000EB2BCD /* KopiViewCell.swift */; };
+		CA1140FE29A9E31100EB2BCD /* Kopi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140FD29A9E31100EB2BCD /* Kopi.swift */; };
+		CA11410029A9E33600EB2BCD /* KopiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1140FF29A9E33600EB2BCD /* KopiProvider.swift */; };
+		CAE1758229A9FC6C00CDA76B /* KopiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE1758129A9FC6C00CDA76B /* KopiDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		CA1140DF29A9E1D200EB2BCD /* sesi1-CoffeeShop2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sesi1-CoffeeShop2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1140E329A9E1D200EB2BCD /* sesi1_CoffeeShop2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesi1_CoffeeShop2UITests.swift; sourceTree = "<group>"; };
 		CA1140E529A9E1D200EB2BCD /* sesi1_CoffeeShop2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sesi1_CoffeeShop2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CA1140F529A9E2B200EB2BCD /* KopiListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopiListViewController.swift; sourceTree = "<group>"; };
+		CA1140F929A9E2D900EB2BCD /* KopiListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KopiListView.storyboard; sourceTree = "<group>"; };
+		CA1140FB29A9E30000EB2BCD /* KopiViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopiViewCell.swift; sourceTree = "<group>"; };
+		CA1140FD29A9E31100EB2BCD /* Kopi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kopi.swift; sourceTree = "<group>"; };
+		CA1140FF29A9E33600EB2BCD /* KopiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopiProvider.swift; sourceTree = "<group>"; };
+		CAE1758129A9FC6C00CDA76B /* KopiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KopiDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,9 @@
 		CA1140C129A9E1D000EB2BCD /* sesi1-CoffeeShop2 */ = {
 			isa = PBXGroup;
 			children = (
+				CA1140F429A9E27D00EB2BCD /* Provider */,
+				CA1140F329A9E26E00EB2BCD /* Model */,
+				CA1140F229A9E25D00EB2BCD /* Controller */,
 				CA1140C229A9E1D000EB2BCD /* AppDelegate.swift */,
 				CA1140C429A9E1D000EB2BCD /* SceneDelegate.swift */,
 				CA1140C629A9E1D000EB2BCD /* ViewController.swift */,
@@ -125,6 +140,33 @@
 				CA1140E529A9E1D200EB2BCD /* sesi1_CoffeeShop2UITestsLaunchTests.swift */,
 			);
 			path = "sesi1-CoffeeShop2UITests";
+			sourceTree = "<group>";
+		};
+		CA1140F229A9E25D00EB2BCD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CA1140F529A9E2B200EB2BCD /* KopiListViewController.swift */,
+				CA1140F929A9E2D900EB2BCD /* KopiListView.storyboard */,
+				CA1140FB29A9E30000EB2BCD /* KopiViewCell.swift */,
+				CAE1758129A9FC6C00CDA76B /* KopiDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CA1140F329A9E26E00EB2BCD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA1140FD29A9E31100EB2BCD /* Kopi.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA1140F429A9E27D00EB2BCD /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				CA1140FF29A9E33600EB2BCD /* KopiProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1140FA29A9E2D900EB2BCD /* KopiListView.storyboard in Resources */,
 				CA1140CF29A9E1D100EB2BCD /* LaunchScreen.storyboard in Resources */,
 				CA1140CC29A9E1D100EB2BCD /* Assets.xcassets in Resources */,
 				CA1140CA29A9E1D000EB2BCD /* Main.storyboard in Resources */,
@@ -258,8 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1140FE29A9E31100EB2BCD /* Kopi.swift in Sources */,
+				CA1140FC29A9E30000EB2BCD /* KopiViewCell.swift in Sources */,
+				CA11410029A9E33600EB2BCD /* KopiProvider.swift in Sources */,
 				CA1140C729A9E1D000EB2BCD /* ViewController.swift in Sources */,
+				CA1140F629A9E2B200EB2BCD /* KopiListViewController.swift in Sources */,
 				CA1140C329A9E1D000EB2BCD /* AppDelegate.swift in Sources */,
+				CAE1758229A9FC6C00CDA76B /* KopiDetailViewController.swift in Sources */,
 				CA1140C529A9E1D000EB2BCD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +414,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -440,11 +488,13 @@
 				DEVELOPMENT_TEAM = 6CG4W4UGXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sesi1-CoffeeShop2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nongs Skuy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = KopiListView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +502,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dony.sesi1-CoffeeShop2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,11 +521,13 @@
 				DEVELOPMENT_TEAM = 6CG4W4UGXP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "sesi1-CoffeeShop2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nongs Skuy";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = KopiListView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +535,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dony.sesi1-CoffeeShop2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
